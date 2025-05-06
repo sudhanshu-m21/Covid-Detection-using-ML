@@ -248,7 +248,7 @@ export default function CovidPrediction() {
     setLoading(true);
     try {
       const response = await fetch(
-        "https://covid-detection-using-ml.onrender.com",
+        "https://covid-detection-using-ml.onrender.com/predict",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
