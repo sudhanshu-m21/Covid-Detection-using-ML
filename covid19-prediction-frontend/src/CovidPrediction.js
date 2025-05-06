@@ -247,11 +247,14 @@ export default function CovidPrediction() {
 
     setLoading(true);
     try {
-      const response = await fetch("http://localhost:5001/predict", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "https://covid-detection-using-ml.onrender.com",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        }
+      );
       const data = await response.json();
       // console.log(data);
       setLoading(false);
