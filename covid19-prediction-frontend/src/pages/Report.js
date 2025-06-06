@@ -17,17 +17,9 @@ export default function ReportPage() {
   ];
 
   return (
-    <div
-      className="min-h-screen bg-cover bg-center flex flex-col justify-between"
-      //   style={{
-      //     backgroundImage:
-      //       "url(https://img.freepik.com/free-vector/realistic-coronavirus-background_52683-35484.jpg)",
-      //   }}
-    >
+    <div className="min-h-screen bg-cover bg-center flex flex-col justify-between">
       <nav className="bg-gray-800 p-4 text-white text-center">
-        <h1 className="text-2xl font-bold">
-          COVID-19 Medical Prediction Report
-        </h1>
+        <h1 className="text-2xl font-bold">COVID-19 Prediction Report</h1>
       </nav>
 
       <div className="max-w-xl mx-auto mt-10 p-6 border rounded-lg shadow-md bg-white">
@@ -38,26 +30,6 @@ export default function ReportPage() {
         </div>
         <div className="mb-4">
           <h3 className="text-xl font-semibold">Precautions:</h3>
-          {/* <ul className="list-disc list-inside ml-4">
-            {result=="Positive"?{symptoms.map((symptom, index) => (
-              <li key={index} className="text-gray-700">
-                {symptom}
-              </li>
-            ))}:""}
-          </ul> */}
-          {/* <ul className="list-disc list-inside ml-4">
-            {result === "COVID Positive" ? (
-              symptoms.map((symptom, index) => (
-                <li key={index} className="text-gray-700">
-                  {symptom}
-                </li>
-              ))
-            ) : (
-              <li className="text-green-700">
-                Congratulations! You are COVID negative. Stay healthy!
-              </li>
-            )}
-          </ul> */}
           <ul className="list-disc list-inside ml-4">
             {result === "COVID Positive" ? (
               precautions.map((precaution, index) => (
